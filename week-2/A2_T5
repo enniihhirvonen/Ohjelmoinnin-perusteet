@@ -2,10 +2,11 @@ print("Program starting.")
 word=input("Insert a closed compound word: ")
 reverse=word[::-1]
 length=len(word)
+length=str(length)
 lastchar=word[-1]
 
 print("The word you inserted is \'" + word + "\' and in reverse it is \'" + reverse + "\'.")
-print("The inserted word length is ", length)
+print("The inserted word length is " + length)
 print("Last character is \'" + lastchar + "\'")
 
 print("Take substring from the inserted word by inserting...")
@@ -14,6 +15,5 @@ end=int(input("2) Ending point: "))
 step=int(input("3) Step size: "))
 
 substring=word[start:end:step]
-
 print("The word \'" + word + "\' sliced to the defined substring is \'" + substring + "\'.")
 print("Program ending.")
