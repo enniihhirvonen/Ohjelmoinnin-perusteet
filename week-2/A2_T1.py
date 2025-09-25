@@ -1,10 +1,17 @@
 print("Program starting.")
-name=input("What is your name: ")
-feed=input("Enter a floating point number: ")
-first=float(feed)
-feed=input("Enter second floating point number: ")
-second=float(feed)
-print(name, "you gave numbers", first, "and", second)
-product=(first * second)
-print("Multiplying first and second number will result in product", round(product, 2))
+
+Name=input("What is your name: ")
+
+Feed=input("Enter a floating point number: ")
+First=float(Feed)
+
+Feed=input("Enter second floating point number: ")
+Second=float(Feed)
+
+print(Name, "you gave numbers", First, "and", Second)
+
+Product=(First * Second)
+
+print("Multiplying first and second number will result in product", round(Product, 2))
+
 print("Program ending.")

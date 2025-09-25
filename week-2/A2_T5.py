@@ -1,19 +1,21 @@
 print("Program starting.")
-word=input("Insert a closed compound word: ")
-reverse=word[::-1]
-length=len(word)
-length=str(length)
-lastchar=word[-1]
 
-print("The word you inserted is \'" + word + "\' and in reverse it is \'" + reverse + "\'.")
-print("The inserted word length is " + length)
-print("Last character is \'" + lastchar + "\'")
+Word=input("Insert a closed compound word: ")
+Reverse=Word[::-1]
+Length=len(Word)
+Length=str(Length)
+LastChar=Word[-1]
+
+print("The word you inserted is \'" + Word + "\' and in reverse it is \'" + Reverse + "\'.")
+print("The inserted word length is " + Length)
+print("Last character is \'" + LastChar + "\'")
 
 print("Take substring from the inserted word by inserting...")
 start=int(input("1) Starting point: "))
 end=int(input("2) Ending point: "))
 step=int(input("3) Step size: "))
 
-substring=word[start:end:step]
-print("The word \'" + word + "\' sliced to the defined substring is \'" + substring + "\'.")
+Substring=Word[start:end:step]
+print("The word \'" + Word + "\' sliced to the defined substring is \'" + Substring + "\'.")
+
 print("Program ending.")
