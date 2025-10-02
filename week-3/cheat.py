@@ -15,7 +15,7 @@ if(Temp % 2 == 0):
 else:
     print("Number is odd.")
 
-#
+#2
 
 Name1=input("First name: ")
 Name2=input("Second name: ")
@@ -28,6 +28,8 @@ elif len(Name1) < len(Name2):
 
 elif len(Name1) == len(Name2):
     print("Both names are the same length.")
+
+#3
 
 import random
 

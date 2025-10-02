@@ -17,7 +17,7 @@ if Choice == 1:
     elif Value >= 100:
         Value += 11
     else:
-        print("Integer stays the same.")
+        print("Value stays the same.")
 
     print(f"Result is {Value}")
 
@@ -28,7 +28,7 @@ elif Choice == 2:
         Value += 22
     if Value >= 100:
         Value += 11
-    else:
+    if Value < 100:
         print("Value stays the same.")
     print(f"Result is {Value}")
 
