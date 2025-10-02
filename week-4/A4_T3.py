@@ -5,7 +5,7 @@ StoppingValue=int(input("Insert stopping value: "))
 
 print("\nStarting while-loop.")
 
-#while starting value is less than stopping value, print starting value, increasing in 1 integer each time it prints
+#as long as starting value is less than stopping value, print starting value increasing by 1 each time it prints1
 while StartingValue <= StoppingValue:
     print(StartingValue, end=" ")
     StartingValue += 1

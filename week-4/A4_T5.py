@@ -4,7 +4,7 @@ StartingPoint=int(input("Insert starting point: "))
 StoppingPoint=int(input("Insert stopping point: "))
 InspectionPoint=int(input("Insert inspection point: "))
 
-Violation = False
+Violation = False #violation flag tracks if violation has been made in inputs
 
 print()
 
@@ -23,13 +23,13 @@ else:
     print("First loop - inspection with break:")
     for Loop1 in range(StartingPoint, StoppingPoint + 1):
         if Loop1 == InspectionPoint:
-            break
+            break #if loop reaches inspection value, end loop
         print(Loop1, end=" ")
 
     print("\nSecond loop - inspection with continue:")
     for Loop2 in range(StartingPoint, StoppingPoint + 1):
         if Loop2 == InspectionPoint:
-            continue
+            continue #if loop reaches inspection value, continue loop
         print(Loop2, end=" ")
 
     print("\n")

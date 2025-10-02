@@ -8,8 +8,8 @@ while True:
         break
     Words.append(Word) #adds inputted words into empty list
 
-WordCount=len(Words)
-CharCount=sum(len(Word) for Word in Words) #calculates length of each word in "Words" list and adds them all up
+WordCount=len(Words) #Calculates each word in "Words" list
+CharCount=sum(len(Word) for Word in Words) #calculates length of each word in "Words" list and adds it all up
 
 print("\nYou inserted:")
 print(f"- {WordCount} words")
