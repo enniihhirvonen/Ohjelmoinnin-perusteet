@@ -23,13 +23,13 @@ else:
     print("First loop - inspection with break:")
     for Loop1 in range(StartingPoint, StoppingPoint + 1):
         if Loop1 == InspectionPoint:
-            break #if loop reaches inspection value, end loop
+            break #when loop reaches inspection value, end loop
         print(Loop1, end=" ")
 
     print("\nSecond loop - inspection with continue:")
     for Loop2 in range(StartingPoint, StoppingPoint + 1):
         if Loop2 == InspectionPoint:
-            continue #if loop reaches inspection value, continue loop
+            continue #when loop reaches inspection value, continue loop
         print(Loop2, end=" ")
 
     print("\n")
