@@ -21,16 +21,16 @@ if Violation == True:
 
 else:
     print("First loop - inspection with break:")
-    for Loop1 in range(StartingPoint, StoppingPoint + 1):
-        if Loop1 == InspectionPoint:
+    for i in range(StartingPoint, StoppingPoint + 1):
+        if i == InspectionPoint:
             break #when loop reaches inspection value, end loop
-        print(Loop1, end=" ")
+        print(i, end=" ")
 
     print("\nSecond loop - inspection with continue:")
-    for Loop2 in range(StartingPoint, StoppingPoint + 1):
-        if Loop2 == InspectionPoint:
+    for i in range(StartingPoint, StoppingPoint + 1):
+        if i == InspectionPoint:
             continue #when loop reaches inspection value, continue loop
-        print(Loop2, end=" ")
+        print(i, end=" ")
 
     print("\n")
 
