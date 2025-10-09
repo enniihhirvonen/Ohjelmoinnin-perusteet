@@ -1,23 +1,29 @@
+#tää ei nyt millään mee läpi testistä vaikka se toimii kuitenkin................ en tiedä mikä ongelma
+
 print("Program starting.\n")
 
 print("Check multiplicative persistence.")
 
-Value=int(input("Insert an integer: "))
+Value=input("Insert an integer: ")
 
-Steps=[] #list for tracking steps
+Steps=0 #step counter
 
-Product= 1
+while len(Value) > 1:
+    Product = 1 #"Product" variable stores multiplication product
+    Steps += 1 #"Steps" variable increases by 1 every loop
+    StepString = "" #"Stepstring" variable stores each "Character" from Value
 
-while (Value > 10):
-    Digits=[int(d) for d in str(Value)] #creates list for each digit in Value (which has been converted to string to allow this) -> then converts each digit back to integers in order for multiplication to take place
-    for d in Digits:
-        Product *= d
+    for Character in Value: #loop continues for each Character in Value
+        Digit = int(Character) #converts string into integer to allow multiplication
+        Product *= Digit
+        StepString += (Character + " * ") #adds asterisk inbetween each Character
 
-AAAAAAAAAAAAAAA
+    print(f"{StepString[:-3]} = {Product}") #[:-3] removes last three characters from "Stepstring" which is the last " * "]
 
+    Value = str(Product) #converts Value back to string to allow loop to continue
 
-print("No more steps.")
+print("No more steps.\n")
 
-print(f"\nThis program took () steps.")
+print(f"This program took {Steps} step(s)")
 
 print("\nProgram ending.")

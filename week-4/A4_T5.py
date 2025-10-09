@@ -28,8 +28,6 @@ else:
 
     print("\nSecond loop - inspection with continue:")
     for i in range(StartingPoint, StoppingPoint + 1):
-        if i == InspectionPoint:
-            continue #when loop reaches inspection value, continue loop
         print(i, end=" ")
 
     print("\n")
