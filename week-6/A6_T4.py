@@ -4,8 +4,6 @@ def main():
 
     fileName = input("\nInsert filename to read: ")
 
-    analysis(fileName)
-
     results = analysis(fileName)
 
     report(results)
@@ -16,18 +14,23 @@ def analysis(fileName):
     print("\nAnalysing names...")
 
     file = open(f"D:/School/2025/Ohjelmointi/Ohjelmoinnin-perusteet/week-6/txt/{fileName}", "r")
-    
-    while True:
-        lines = file.readline()
-        break
 
     names = []
+    
+    while True:
+        line = file.readline()
+        if not line: # if the line is empty, break the loop
+            break
 
-    for line in lines:
-        names.extend(line.strip().split())
+        line = line.strip() # strip line of whitespace
+
+        if line: # if line is not empty after stripping, split names based on whitespace
+            names.append(line) # add names to list
+
+    file.close()
 
     nameCount = len(names)
-    charCount = sum(len(names) for names in line)
+    charCount = sum(len(name) for name in names)
     shortestName = min(names, key=len)
     longestName = max(names, key=len)
     averageName = (charCount / nameCount)
@@ -40,7 +43,7 @@ def analysis(fileName):
         "shortestName": shortestName,
         "longestName": longestName,
         "averageName": averageName,
-    }
+    } # returns results as dictionary
 
 def report(results):
 
