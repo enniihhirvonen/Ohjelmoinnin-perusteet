@@ -4,7 +4,7 @@ def main():
 
     feed = input("Insert filename: ")
 
-    fileName = (f"D:/School/2025/Ohjelmointi/Ohjelmoinnin-perusteet/week-6/txt/{feed}") # wouldnt work without full directory :/
+    fileName = (f"week-6/txt/{feed}")
 
     readFile(fileName, feed) # made feed and fileName separate from each other so that START and END lines wouldnt be messy
 

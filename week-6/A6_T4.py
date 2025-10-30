@@ -13,7 +13,7 @@ def main():
 def analysis(fileName):
     print("\nAnalysing names...")
 
-    file = open(f"D:/School/2025/Ohjelmointi/Ohjelmoinnin-perusteet/week-6/txt/{fileName}", "r")
+    file = open(f"week-6/txt/{fileName}", "r")
 
     names = []
     

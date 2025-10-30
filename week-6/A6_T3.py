@@ -12,13 +12,13 @@ def main():
 def copyFile(source, destination):
     print(f"\nReading file \'{source}\' content.")
 
-    readFile = open(f"D:/School/2025/Ohjelmointi/Ohjelmoinnin-perusteet/week-6/txt/{source}", "r")
+    readFile = open(f"week-6/txt/{source}", "r")
 
     print("\nFile content ready in memory.")
 
     print(f"\nWriting content into file \'{destination}\'")
 
-    writeFile = open(f"D:/School/2025/Ohjelmointi/Ohjelmoinnin-perusteet/week-6/txt/{destination}", "w")
+    writeFile = open(f"week-6/txt/{destination}", "w")
 
     while True:
         line = readFile.readline()

@@ -11,7 +11,7 @@ def main():
 
 
 def writeFile(firstName, lastName, fileName):
-    file = open(f"D:/School/2025/Ohjelmointi/Ohjelmoinnin-perusteet/week-6/txt/{fileName}", "w")
+    file = open(f"week-6/txt/{fileName}", "w")
     file.write(firstName + "\n")
     file.write(lastName + "\n")
     file.close()

@@ -12,7 +12,7 @@ def main():
     print("Program ending.")
 
 def readValues(filename):
-    file = open(f"{filename}", "r")
+    file = open(f"week-6/txt/{filename}", "r")
 
     values = [] 
 
