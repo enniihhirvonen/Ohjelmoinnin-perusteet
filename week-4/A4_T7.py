@@ -1,4 +1,4 @@
-#tää ei nyt millään mee läpi testistä vaikka se toimii kuitenkin................ en tiedä mikä ongelma
+#tää ei nyt millään mee läpi testistä vaikka se toimii kuitenkin................ en tiedä mikä ongelma. kun vaihtaa test_main.py "python3" --> "python" toimii täydellisesti, mutta en viitsi classroomissa vaihdella testin koodia
 
 print("Program starting.\n")
 
