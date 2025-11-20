@@ -30,21 +30,20 @@ def main() -> None:
         match choice:
             case 1:
                 print('Insert square')
-                print('Insert square')
-                left = int(askValue1("- Left edge position"))
-                top = int(askValue1("- Top edge position"))
-                sideLength = int(askValue1("- Side length"))
-                color = askValue1("- Fill color")
-                strokeColor = askValue1("- Stroke color")
+                left = int(askValue1("Left edge position"))
+                top = int(askValue1("Top edge position"))
+                sideLength = int(askValue1("Side length"))
+                color = askValue1("Fill color")
+                strokeColor = askValue1("Stroke color")
                 drawSquare(Dwg, left, top, sideLength, color, strokeColor)
                 
             case 2:
                 print('Insert circle')
-                centerX = int(askValue1("- Center X coord"))
-                centerY = int(askValue1("- Center Y coord"))
-                radius = int(askValue1("- Radius"))
-                color = askValue1("- Fill color")
-                stroke = askValue1("- Stroke color")
+                centerX = int(askValue1("Center X coord"))
+                centerY = int(askValue1("Center Y coord"))
+                radius = int(askValue1("Radius"))
+                color = askValue1("Fill color")
+                stroke = askValue1("Stroke color")
                 drawCircle(Dwg, centerX, centerY, radius, color, stroke)
                 
             case 3:
