@@ -31,11 +31,11 @@ def main() -> None:
             case 1:
                 print('Insert square')
                 print('Insert square')
-                left = int(askValue1("- Left edge position: "))
-                top = int(askValue1("- Top edge position: "))
-                sideLength = int(askValue1("- Side length: "))
-                color = askValue1("- Fill color: ")
-                strokeColor = askValue1("- Stroke color: ")
+                left = int(askValue1("- Left edge position"))
+                top = int(askValue1("- Top edge position"))
+                sideLength = int(askValue1("- Side length"))
+                color = askValue1("- Fill color")
+                strokeColor = askValue1("- Stroke color")
                 drawSquare(Dwg, left, top, sideLength, color, strokeColor)
                 
             case 2:
