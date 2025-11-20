@@ -40,18 +40,18 @@ def main() -> None:
                 
             case 2:
                 print('Insert circle')
-                centerX = int(askValue1("- Center X coord: "))
-                centerY = int(askValue1("- Center Y coord: "))
-                radius = int(askValue1("- Radius: "))
-                color = askValue1("- Fill color: ")
-                stroke = askValue1("- Stroke color: ")
+                centerX = int(askValue1("- Center X coord"))
+                centerY = int(askValue1("- Center Y coord"))
+                radius = int(askValue1("- Radius"))
+                color = askValue1("- Fill color")
+                stroke = askValue1("- Stroke color")
                 drawCircle(Dwg, centerX, centerY, radius, color, stroke)
                 
             case 3:
-                filename = askValue2("Insert filename: ")
+                filename = askValue2("Insert filename")
                 print(f'Saving file to "{filename}"')
 
-                proceed = askValue2("Proceed (y/n)?: ")
+                proceed = askValue2("Proceed (y/n)?")
                 if proceed.lower() == "y":
                     saveSvg(Dwg, filename)
                     print("Vector saved successfully!")
@@ -66,3 +66,6 @@ def main() -> None:
     print("Program ending.")
 
     return None
+
+if __name__ == "__main__":
+    main()
