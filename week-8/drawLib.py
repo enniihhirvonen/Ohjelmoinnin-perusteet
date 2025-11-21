@@ -1,5 +1,6 @@
 from svgwrite import Drawing, cm
 from svgwrite.shapes import Rect, Circle, Polygon
+import math
 
 def drawSquare(PDwg: Drawing, left, top, sideLength, color, strokeColor) -> None:
     """
@@ -26,6 +27,30 @@ def drawCircle(PDwg: Drawing, centerX, centerY, radius, color, stroke) -> None:
         stroke: Stroke color of the circle.
     """
     PDwg.add(Circle(center=(centerX, centerY), r=radius, fill=color, stroke=stroke))
+
+def drawHexagon(PDwg, middleX, middleY, apothem, color, stroke):
+    """
+    Add a regular hexagon to the drawing.
+    Parameters:
+        PDwg: Drawing object to add the hexagon to.
+        middleX, middleY: Center coordinates of the hexagon.
+        apothem: Distance from center to a side.
+        color: Fill color.
+        stroke: Stroke color.
+    """
+    radius = (2 / math.sqrt(3)) * apothem
+
+    angles = [30, 90, 150, 210, 270, 330]
+    points = []
+
+    for angle in angles:
+        rad = math.radians(angle)
+        x = middleX + radius * math.cos(rad)
+        y = middleY + radius * math.sin(rad)
+        points.append((round(x), round(y)))
+
+    PDwg.add(Polygon(points=points, fill=color, stroke=stroke))
+
 
 def saveSvg(PDwg: Drawing, file) -> None:
     """
