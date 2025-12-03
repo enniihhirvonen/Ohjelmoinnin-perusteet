@@ -23,6 +23,13 @@ def copyFile(PSrcFile: str, PDstFile: str) -> None:
             sys.exit(-1)
 
 def main() -> None:
+    print("""
+########################################################
+# Task A9_T7
+# Developer Enni Hirvonen
+# Date 2025-12-03
+########################################################""")
+    
     print("Program starting.")
 
     if len(sys.argv) != 3:
