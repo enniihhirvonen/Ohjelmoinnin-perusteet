@@ -1,3 +1,12 @@
+"""
+########################################################
+# Task A9_T5
+# Developer Enni Hirvonen
+# Date 2025-12-02
+########################################################
+
+"""
+
 def askIntByte(PPrompt: str) -> int:
     # Ask for input
     Feed = input(PPrompt)
@@ -37,13 +46,6 @@ def createHex(PRed: int, PGreen: int, PBlue: int) -> str:
     return "#{:02x}{:02x}{:02x}".format(PRed, PGreen, PBlue)
 
 def main():
-    print("""
-########################################################
-# Task A9_T5
-# Developer Enni Hirvonen
-# Date 2025-12-02
-########################################################""")
-    
     print("Program starting.")
 
     try:

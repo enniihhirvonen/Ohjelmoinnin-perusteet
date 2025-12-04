@@ -1,3 +1,12 @@
+"""
+########################################################
+# Task A9_T4
+# Developer Enni Hirvonen
+# Date 2025-11-25
+########################################################
+
+"""
+
 TEMP_MIN = -273.15
 TEMP_MAX = 10000
 
@@ -14,12 +23,6 @@ def collect_celsius():
         return None, False
 
 def main():
-    print("""
-########################################################
-# Task A9_T4
-# Developer Enni Hirvonen
-# Date 2025-11-25
-########################################################""")
     print("Program starting.")
 
     temp_valid = False

@@ -1,3 +1,12 @@
+"""
+########################################################
+# Task A9_T6
+# Developer Enni Hirvonen
+# Date 2025-12-02
+########################################################
+
+"""
+
 def showOptions() -> None:
     print("Options:")
     print("1- Insert line")
@@ -58,13 +67,6 @@ def onInterrupt(PLines: list[str]) -> None:
     return None
 
 def main() -> None:
-    print("""
-########################################################
-# Task A9_T6
-# Developer Enni Hirvonen
-# Date 2025-12-02
-########################################################""")
-    
     Lines: list[str] = []
     Choice = -1
     print("Program starting.")

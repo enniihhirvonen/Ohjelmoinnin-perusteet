@@ -1,13 +1,15 @@
-import sys
-
-def main():
-    print("""
+"""
 ########################################################
 # Task A9_T2
 # Developer Enni Hirvonen
 # Date 2025-11-25
-########################################################""")
-    
+########################################################
+
+"""
+
+import sys
+
+def main():
     print("\nProgram starting.")
 
     code = int(input("\nInsert exit code (0-255: )"))

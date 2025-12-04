@@ -1,3 +1,12 @@
+"""
+########################################################
+# Task A9_T1
+# Developer Enni Hirvonen
+# Date 2025-11-25
+########################################################
+
+"""
+
 def gather_values(values):
     while True:
         try:
@@ -13,13 +22,6 @@ def result(values):
     return print(f"\nFinal sum is {sum(values):.2f}")
 
 def main():
-    print("""
-########################################################
-# Task A9_T1
-# Developer Enni Hirvonen
-# Date 2025-11-25
-########################################################""")
-    
     values = []
 
     print("\nProgram starting.\n")
